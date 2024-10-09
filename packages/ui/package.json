@@ -1,5 +1,5 @@
 {
-  "name": "@acme/ui",
+  "name": "@intello-substance/ui",
   "version": "0.0.0",
   "sideEffects": false,
   "license": "MIT",
@@ -16,16 +16,24 @@
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
+  "bin": {
+    "intello-substance-ui": "./scripts/install.js"
+  },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
-    "@repo/typescript-config": "*",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@radix-ui/react-portal": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
     "react": "^18.2.0"
   },
   "publishConfig": {
